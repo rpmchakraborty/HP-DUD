@@ -69,7 +69,7 @@
   color: white;
   border: none;
   cursor: pointer;
-  margin-right: 20px; /* Reduced margin for better alignment */
+  margin-right: 20px;
 }
 
 .login-button button:hover {
