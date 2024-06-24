@@ -10,6 +10,105 @@
     gap: 18px;
 }
 
+.newcard-content{
+    width: 86%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin: 100px;
+    position: relative;
+}
+
+.insidecard-content{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    bottom: 0;
+    left: 0;
+}
+
+.bicard{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+}
+
+.bicardl-content{
+    width: 50%;
+    height: 700px;
+    background-color: #49627E;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.bicard-inside{
+    height: 500px;
+    width: 80%;
+    position: absolute;
+    left: 80px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.bi-blocks{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+ }
+
+.inside-blocks{
+   display: flex;
+   flex-direction: row;
+   gap: 5px;
+}
+
+.bicardr-content{
+    width: 50%;
+    height: 700px;
+    position: relative;
+    background-color: #E0E8F1;
+    background-position: center;
+    overflow: hidden;
+}
+
+.b-certificate{
+    height: 500px;
+    position: absolute;
+    top: 100px;
+    left: 150px
+}
+
+.process-bg{
+    height: 200px;
+    width: 17%;
+}
+
+.custom-button {
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    outline: none;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #1F31553D;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    bottom: 30px;
+    left: 150px;
+  }
+
 .top-ncard{
     width: 100%;
     height: 200px; 
@@ -183,6 +282,28 @@
     z-index: 1;
     top: 0px;
     left: 0px;
+    text-align: left;
+  }
+
+  .newcard-text{
+    position: absolute;
+    top: 0;
+    left: 450px;
+    font-size: 50px;
+    z-index: 1;
+    text-align: left;
+  }
+
+  .bicard-text{
+    color: white;
+    font-size: 50px;
+    z-index: 1;
+    text-align: left;
+  }
+
+  .para-text{
+    color: white;
+    font-size: 20px;
     text-align: left;
   }
 
