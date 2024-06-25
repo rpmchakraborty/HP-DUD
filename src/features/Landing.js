@@ -30,7 +30,7 @@ const Landing = () => {
     <div>
       <Navbar />
       <Card cardHeight={800} backgroundImage={cardbackground} />
-      <Card backgroundColor="#f7f7fd" cardHeight={800}>
+      <Card backgroundColor="#f7f7fd" cardHeight={930}>
         <div className="ncard-content">
           <div className="top-ncard">
             <img src={titleimg} alt="Title" className="title-image" />

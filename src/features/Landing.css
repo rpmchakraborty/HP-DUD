@@ -253,7 +253,7 @@
     height: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap;
 }
 
 .bicardl-content {
@@ -264,7 +264,7 @@
     overflow: hidden;
     position: relative;
     display: flex;
-    justify-content: center; /* Center the content horizontally */
+    justify-content: center;
 }
 
 .bicard-inside {
@@ -405,8 +405,55 @@
     }
 }
 
+.top-scard{
+    width: 100%;
+    height: 300px; 
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
 
-.custom-button {
+.tscard1 {
+    width: 33%;
+    height: 300px;
+    background-color: white;
+    position: relative; 
+  }
+
+  .hcard-text{
+    position: absolute;
+    font-size: 50px;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    text-align: left;
+  }
+
+  .hcard-para{
+    font-size: 16px;
+  }
+
+  .tscard2 {
+    width: 33%;
+    height: 300px;
+    background-color: #7D96C7;
+    position: relative;
+  }
+
+  .tcard-text{
+    position: absolute;
+    font-size: 16px;
+    color: white;
+    z-index: 1;
+    top: 30px;
+    left: 30px;
+    text-align: left;
+  }
+  .ncard-para{
+    font-size: 28px;
+  }
+
+  .custom-button {
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -421,13 +468,38 @@
     left: 150px;
   }
 
-.top-scard{
-    width: 100%;
-    height: 300px; 
-    display: flex;
-    flex-direction: row;
-    gap: 18px;
+  .tscard3{
+    width: 33%;
+    height: 300px;
+    background-color: #D4CFF3;
+    position: relative;
+    ; 
+  }
+  .card-bg1{
+    position: absolute;
+    height: 135px;
+    width: 186px;
+    bottom: 0;
+    right: 0;
 }
+
+.card-bg2{
+  position: absolute;
+  height: 170px;
+  width: 150px;
+  bottom: 0;
+  right: 0;
+}
+
+.ncard-text{
+  position: absolute;
+  font-size: 16px;
+  z-index: 1;
+  top: 30px;
+  left: 30px;
+  text-align: left;
+}
+
 
 .bottom-scard{
     width: 100%;
@@ -436,35 +508,8 @@
     flex-direction: row;
     gap: 18px;
 }
-  
-  .main-content {
-    margin-top: 50px;
-    text-align: center;
-  }
 
-  .tscard1 {
-    width: 33%;
-    height: 300px;
-    background-color: white;
-    position: relative; 
-  }
-
-  .tscard2 {
-    width: 33%;
-    height: 300px;
-    background-color: #7D96C7;
-    position: relative;
-  }
-
-  .tscard3{
-    width: 33%;
-    height: 300px;
-    background-color: #D4CFF3;
-    position: relative;
-    ; 
-  }
-
-  .bscard1 {
+.bscard1 {
     width: 33%;
     height: 300px;
     background-color: #F3E5CF;
@@ -485,54 +530,12 @@
     position: relative;
   }
 
-  .card-bg1{
-      position: absolute;
-      height: 135px;
-      width: 186px;
-      bottom: 0;
-      right: 0;
+  
+  .main-content {
+    margin-top: 50px;
+    text-align: center;
   }
 
-  .card-bg2{
-    position: absolute;
-    height: 170px;
-    width: 150px;
-    bottom: 0;
-    right: 0;
-}
-
-.ncard-text{
-    position: absolute;
-    font-size: 16px;
-    z-index: 1;
-    top: 30px;
-    left: 30px;
-    text-align: left;
-  }
-
-  .tcard-text{
-    position: absolute;
-    font-size: 16px;
-    color: white;
-    z-index: 1;
-    top: 30px;
-    left: 30px;
-    text-align: left;
-  }
-
-  .hcard-text{
-    position: absolute;
-    font-size: 50px;
-    z-index: 1;
-    top: 0px;
-    left: 0px;
-    text-align: left;
-  }
-
-
-  .ncard-para{
-    font-size: 28px;
-  }
 
   .hcard-para{
     font-size: 16px;
