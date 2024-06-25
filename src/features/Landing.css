@@ -1,26 +1,175 @@
-.ncard-content{
+.ncard-content {
     width: 86%;
-    height: 600px; 
+    height: auto;
     background-size: cover;
     background-position: center;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    margin: 100px;
-    gap: 18px;
+    margin: 100px auto;
+    gap: 50px;
+  }
+  
+  .top-ncard {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 180px;
+    align-items: center;
+  }
+  
+  .title-image {
+    height: auto;
+    width: 100%;
+    max-width: 270px;
+    margin-right: 20px;
+  }
+  
+  .text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .text {
+    margin: 0;
+    font-size: 24px;
+    color: #1D1D1DB2;
+    text-align: left;
+  }
+  
+  .bottom-ncard {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cover-image {
+    height: auto;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .cover-card {
+    width: 100%;
+    max-width: 380px;
+    background-color: #E3EAF7;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .card-head {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    width: 70%;
+    z-index: 1;
 }
 
-.newcard-content{
+.cover-bg1 {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+  
+  .card-text {
+    position: absolute;
+    font-size: 22px;
+    z-index: 1;
+    bottom: 20px;
+    left: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .ncard-content {
+      margin: 50px auto;
+      gap: 30px;
+    }
+  
+    .top-ncard {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .title-image {
+      width: 100%;
+      max-width: 100%;
+      margin-right: 0;
+    }
+  
+    .text-container {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .text {
+      font-size: 20px;
+    }
+  
+    .bottom-ncard {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .cover-image {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .cover-card {
+      width: 100%;
+      max-width: none;
+      align-items: center;
+      padding: 0;
+    }
+  
+    .card-head,
+    .cover-bg1 {
+      width: 100%;
+      height: auto;
+      max-width: none;
+    }
+  
+    .card-text {
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+  }  
+
+  .newcard-content {
     width: 86%;
     height: 300px;
     background-size: cover;
     background-position: center;
     overflow: hidden;
-    margin: 100px;
+    margin: 100px auto;
     position: relative;
 }
 
-.insidecard-content{
+.newcard-text {
+    position: absolute;
+    top: 0;
+    left: 450px;
+    font-size: 50px;
+    z-index: 1;
+    text-align: left;
+}
+
+.insidecard-content {
     width: 100%;
     height: 200px;
     background-size: cover;
@@ -34,65 +183,228 @@
     left: 0;
 }
 
-.bicard{
-    width: 100%;
-    height: 700px;
-    display: flex;
-    flex-direction: row;
+.process-bg {
+    height: 200px;
+    width: 17%;
 }
 
-.bicardl-content{
+@media (max-width: 1024px) {
+    .newcard-text {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .newcard-content {
+        height: auto;
+        margin: 50px auto;
+    }
+
+    .newcard-text {
+        font-size: 35px;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .insidecard-content {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        gap: 10px;
+        bottom: auto;
+    }
+
+    .process-bg {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .newcard-content {
+        margin: 20px auto;
+    }
+
+    .newcard-text {
+        font-size: 25px;
+        top: 5px;
+    }
+
+    .insidecard-content {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .process-bg {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.bicard {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.bicardl-content {
     width: 50%;
     height: 700px;
     background-color: #49627E;
     background-position: center;
     overflow: hidden;
     position: relative;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
 }
 
-.bicard-inside{
+.bicard-inside {
     height: 500px;
     width: 80%;
     position: absolute;
-    left: 80px;
     top: 100px;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.bi-blocks{
+.bicard-text {
+    color: white;
+    font-size: 50px;
+    z-index: 1;
+    text-align: left;
+}
+
+.para-text {
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+.bi-blocks {
     display: flex;
     flex-direction: column;
     gap: 5px;
- }
-
-.inside-blocks{
-   display: flex;
-   flex-direction: row;
-   gap: 5px;
 }
 
-.bicardr-content{
+.inside-blocks {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.bicardr-content {
     width: 50%;
     height: 700px;
     position: relative;
     background-color: #E0E8F1;
     background-position: center;
     overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
 }
 
-.b-certificate{
+.b-certificate {
     height: 500px;
     position: absolute;
     top: 100px;
-    left: 150px
+    left: 150px;
 }
 
-.process-bg{
-    height: 200px;
-    width: 17%;
+@media (max-width: 1024px) {
+    .bicardl-content,
+    .bicardr-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .bicard-inside {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        margin: 20px auto;
+        height: auto;
+    }
+
+    .b-certificate {
+        position: relative;
+        height: auto;
+        width: 80%;
+        top: auto;
+        left: auto;
+        margin: 20px auto;
+    }
 }
+
+@media (max-width: 768px) {
+    .bicard {
+        flex-direction: column;
+    }
+
+    .bicardl-content,
+    .bicardr-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .bicard-inside {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .bicard-text {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .para-text {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .bi-blocks {
+        align-items: center;
+    }
+
+    .inside-blocks {
+        justify-content: center;
+    }
+
+    .b-certificate {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .bicard-inside {
+        width: 95%;
+    }
+
+    .bicard-text {
+        font-size: 30px;
+    }
+
+    .para-text {
+        font-size: 16px;
+    }
+}
+
 
 .custom-button {
     border: none;
@@ -109,22 +421,6 @@
     left: 150px;
   }
 
-.top-ncard{
-    width: 100%;
-    height: 200px; 
-    display: flex;
-    flex-direction: row;
-    gap: 250px;
-}
-
-.bottom-ncard{
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
-
 .top-scard{
     width: 100%;
     height: 300px; 
@@ -140,58 +436,6 @@
     flex-direction: row;
     gap: 18px;
 }
-
-.cover-image {
-    height: 400px;
-    width: 900px;
-  }
-
-.title-image {
-    height: 120px;
-    width: 270px;
-    margin-right: 20px; 
-  }
-
-  .cover-card{
-    height: 450px;
-    width: 380px;
-    background-color: #E3EAF7;
-    position: relative; 
-  }
-
-  .card-head{
-    position: absolute;
-    top: 50px;
-    left: 30px;
-    width: 70%; 
-    z-index: 1;
-  }
-
-  .cover-bg1{
-    position: relative;
-    height: 400px;
-    width: 350px;
-  }
-
-  .card-text{
-    position: absolute;
-    font-size: 22px;
-    z-index: 1;
-    top: 330px;
-    left: 30px
-  }
-  
-  .text-container {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .text {
-    margin: 0;
-    font-size: 24px;
-    color: #1D1D1DB2;
-    text-align: left;
-  }
   
   .main-content {
     margin-top: 50px;
@@ -285,27 +529,6 @@
     text-align: left;
   }
 
-  .newcard-text{
-    position: absolute;
-    top: 0;
-    left: 450px;
-    font-size: 50px;
-    z-index: 1;
-    text-align: left;
-  }
-
-  .bicard-text{
-    color: white;
-    font-size: 50px;
-    z-index: 1;
-    text-align: left;
-  }
-
-  .para-text{
-    color: white;
-    font-size: 20px;
-    text-align: left;
-  }
 
   .ncard-para{
     font-size: 28px;

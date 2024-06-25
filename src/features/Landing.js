@@ -5,12 +5,12 @@ import cardbackground from "../assets/images/cardbackground.png";
 import coverimg from "../assets/images/coverimg.png";
 import titleimg from "../assets/images/titleimg.png";
 import bg1 from "../assets/images/bg1.png";
-import block1 from '../assets/images/block1.png';
-import block2 from '../assets/images/block2.png';
-import block3 from '../assets/images/block3.png';
-import block4 from '../assets/images/block4.png';
-import block5 from '../assets/images/block5.png';
-import block6 from '../assets/images/block6.png';
+import block1 from "../assets/images/block1.png";
+import block2 from "../assets/images/block2.png";
+import block3 from "../assets/images/block3.png";
+import block4 from "../assets/images/block4.png";
+import block5 from "../assets/images/block5.png";
+import block6 from "../assets/images/block6.png";
 import process1 from "../assets/images/process1.png";
 import process2 from "../assets/images/process2.png";
 import process3 from "../assets/images/process3.png";
@@ -129,26 +129,30 @@ const Landing = () => {
       <div className="bicard">
         <div className="bicardl-content">
           <div className="bicard-inside">
-          <div className="bicard-text">Application Details</div>
-          <div className="para-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at fermentum dolor.</div>
-          <div className="bi-blocks">
-          <div className="inside-blocks">
-          <img src={block1} alt="Title" className="" />
-          <img src={block2} alt="Title" className="" />
-          <img src={block3} alt="Title" className="" />
-          </div>
-          <div className="inside-blocks">
-          <img src={block4} alt="Title" className="" />
-          <img src={block5} alt="Title" className="" />
-          <img src={block6} alt="Title" className="" />
-          </div>
-          </div>
+            <div className="bicard-text">Application Details</div>
+            <div className="para-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              at fermentum dolor.
+            </div>
+            <div className="bi-blocks">
+              <div className="inside-blocks">
+                <img src={block1} alt="Title" />
+                <img src={block2} alt="Title" />
+                <img src={block3} alt="Title" />
+              </div>
+              <div className="inside-blocks">
+                <img src={block4} alt="Title" />
+                <img src={block5} alt="Title" />
+                <img src={block6} alt="Title" />
+              </div>
+            </div>
           </div>
         </div>
         <div className="bicardr-content">
-         <img src={birthcertificate} alt="Title" className="b-certificate" />
+          <img src={birthcertificate} alt="Title" className="b-certificate" />
         </div>
       </div>
+
       <div className="main-content">
         <h2>Welcome to Our Website</h2>
         <p>This is the landing page content.</p>
