@@ -30,6 +30,7 @@ import cardhead from "../assets/images/cardhead.png";
 import downloadicon from "../assets/images/downloadicon.png";
 import videoimage from "../assets/images/videoimage.png";
 import videocircle from "../assets/images/videocircle.svg";
+import { Container, Row, Col } from 'react-bootstrap';
 import footerend from "../assets/images/footerend.png";
 import "./Landing.css";
 
@@ -243,72 +244,71 @@ const Landing = () => {
         <img src={compbanner} alt="Title" className="bannercard" />
       </Card>
       <Card cardHeight={300} backgroundColor="#334870">
-        <div className="footer-container">
-          <div className="footer-column">
-            <h3>Department of Urban Development</h3>
-            <p>Government of Himachal Pradesh</p>
-          </div>
-          <div className="footer-column">
-            <h3>Government</h3>
-            <br></br>
-            <ul>
-              <li>
-                <a href="#">Governor</a>
-              </li>
-              <li>
-                <a href="#">Who Is Who</a>
-              </li>
-              <li>
-                <a href="#">Member of Legislative Assembly</a>
-              </li>
-              <li>
-                <a href="#">Secretaries</a>
-              </li>
-              <li>
-                <a href="#">Head of the Departments</a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-column">
-            <h3>Departments</h3>
-            <br></br>
-            <ul>
-              <li>
-                <a href="#">Departmental Information</a>
-              </li>
-              <li>
-                <a href="#">Map Locator</a>
-              </li>
-            </ul>
-          </div>
-          <div className="footer-column">
-            <h3>Citizen</h3>
-            <br></br>
-            <ul>
-              <li>
-                <a href="#">Citizen Charter</a>
-              </li>
-              <li>
-                <a href="#">Official Directory</a>
-              </li>
-              <li>
-                <a href="#">Useful Links</a>
-              </li>
-              <li>
-                <a href="#">Citizen Services</a>
-              </li>
-              <li>
-                <a href="#">Recruitment Results</a>
-              </li>
-              <li>
-                <a href="#">Recruitment Selected</a>
-              </li>
-              <li>
-                <a href="#">Candidates</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <Container fluid className="footer-container text-white">
+      <Row>
+        <Col md={3} className="footer-column">
+          <h3>Department of Urban Development</h3>
+          <p>Government of Himachal Pradesh</p>
+        </Col>
+        <Col md={3} className="footer-column">
+          <h3>Government</h3>
+          <ul>
+            <li>
+              <a href="#">Governor</a>
+            </li>
+            <li>
+              <a href="#">Who Is Who</a>
+            </li>
+            <li>
+              <a href="#">Member of Legislative Assembly</a>
+            </li>
+            <li>
+              <a href="#">Secretaries</a>
+            </li>
+            <li>
+              <a href="#">Head of the Departments</a>
+            </li>
+          </ul>
+        </Col>
+        <Col md={3} className="footer-column">
+          <h3>Departments</h3>
+          <ul>
+            <li>
+              <a href="#">Departmental Information</a>
+            </li>
+            <li>
+              <a href="#">Map Locator</a>
+            </li>
+          </ul>
+        </Col>
+        <Col md={3} className="footer-column">
+          <h3>Citizen</h3>
+          <ul>
+            <li>
+              <a href="#">Citizen Charter</a>
+            </li>
+            <li>
+              <a href="#">Official Directory</a>
+            </li>
+            <li>
+              <a href="#">Useful Links</a>
+            </li>
+            <li>
+              <a href="#">Citizen Services</a>
+            </li>
+            <li>
+              <a href="#">Recruitment Results</a>
+            </li>
+            <li>
+              <a href="#">Recruitment Selected</a>
+            </li>
+            <li>
+              <a href="#">Candidates</a>
+            </li>
+          </ul>
+        </Col>
+      </Row>
+    </Container>
       </Card>
       <Card cardHeight={90} backgroundColor="#213457">
         <div className="footer-links-wrapper">
