@@ -9,7 +9,6 @@ function App() {
     <Router>
     <div className="App">
       <Landing></Landing>
-      HP Project
     </div>
     </Router>
   );
