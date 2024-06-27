@@ -52,7 +52,7 @@ const Landing = () => {
           </button>
         </div>
       </Card>
-      <Card backgroundColor="#f7f7fd" cardHeight={920}>
+      <Card backgroundColor="#f7f7fd" cardHeight={950}>
         <div className="ncard-content">
           <div className="top-ncard">
             <img src={titleimg} alt="Title" className="title-image" />
